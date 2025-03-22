@@ -1,10 +1,10 @@
 workflow "Depkoy Worker {
   on = "push"
-  resolves = ["cloudflare/serverless-action@master"]
+  resolves = ["lora722/PDF-to-Markdown-Converter-Worker"]
 }
 
 action "Deploy Worker" {
-  uses = "cloudflare/serverless-action@master"
+  uses = "lora722/PDF-to-Markdown-Converter-Worker"
   env = {
     CLOUDFLARE_ACCOUNT_ID = "ACCOUNT_ID"
     CF_API_TOKEN = "CF_API_TOKEN"
